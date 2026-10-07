@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="tj">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Беҳтарин парфюмҳои премиум (Ecosha) барои мошини шумо дар Тоҷикистон. Бӯи хуш ва эҳсоси роҳат дар ҳар як сафар.">
+    <meta name="keywords" content="парфюм машина, ароматизатор авто, ecosha, хушбӯйкунандаи мошин, Тоҷикистон, Душанбе">
+    <meta name="author" content="AuraDrive">
+    <title>Парфюми Мошин - Premium Car Perfumes</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-animation"></div>
+    <nav class="navbar">
+        <div class="logo">AuraDrive</div>
+        <ul class="nav-links">
+            <li><a href="#home">Асосӣ</a></li>
+            <li><a href="#products">Маҳсулот</a></li>
+            <li><a href="tel:+992005054693" class="contact-phone">📞 +992 00 505 4693</a></li>
+        </ul>
+        <button class="cta-btn">Фармоиш</button>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h1>Бӯи хуш дар ҳар як сафар</h1>
+            <p>Беҳтарин парфюмҳои премиум барои мошини шумо. Эҳсоси тозагӣ ва роҳатро кашф кунед.</p>
+            <button class="primary-btn">Каталогро дидан</button>
+        </div>
+        <div class="hero-image-container">
+            <div class="glass-card">
+                <div class="perfume-mockup"></div>
+            </div>
+        </div>
+    </header>
+
+    <section id="products" class="products">
+        <h2>Маҳсулоти Машҳур</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-image mock-img-1"></div>
+                <h3>Ecosha Black</h3>
+                <p>Бӯи мардонаи классикӣ</p>
+                <span class="price">179 TJS</span>
+                <button class="buy-btn" data-product="Ecosha Black">Фармоиш</button>
+            </div>
+            <div class="product-card">
+                <div class="product-image mock-img-2"></div>
+                <h3>Ecosha Bubble Gum</h3>
+                <p>Бӯи ширини сақич</p>
+                <span class="price">179 TJS</span>
+                <button class="buy-btn" data-product="Ecosha Bubble Gum">Фармоиш</button>
+            </div>
+            <div class="product-card">
+                <div class="product-image mock-img-3"></div>
+                <h3>Ecosha Vanilla</h3>
+                <p>Таровати ванил</p>
+                <span class="price">179 TJS</span>
+                <button class="buy-btn" data-product="Ecosha Vanilla">Фармоиш</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Order -->
+    <div id="orderModal" class="modal">
+        <div class="modal-content glass-card">
+            <span class="close">&times;</span>
+            <h2>Фармоиши Маҳсулот</h2>
+            <form id="orderForm">
+                <input type="hidden" id="productName" name="productName">
+                <div class="form-group">
+                    <label for="userName">Ном:</label>
+                    <input type="text" id="userName" required placeholder="Номи худро дохил кунед">
+                </div>
+                <div class="form-group">
+                    <label for="userPhone">Телефон:</label>
+                    <input type="tel" id="userPhone" required placeholder="+992 00 000 0000">
+                </div>
+                <button type="submit" class="primary-btn w-100">Ирсол кардан</button>
+            </form>
+            <div id="orderStatus"></div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <h3>AuraDrive</h3>
+            <p>Беҳтарин парфюмҳо барои мошини шумо</p>
+            <div class="contact-info">
+                <p>📞 Тамос: <a href="tel:+992005054693">+992 00 505 4693</a></p>
+            </div>
+            <p class="copyright">&copy; 2024 AuraDrive. Ҳамаи ҳуқуқҳо маҳфузанд.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
